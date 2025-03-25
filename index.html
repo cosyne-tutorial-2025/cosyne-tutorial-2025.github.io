@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformers in Neuroscience - Cosyne 2025 Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shadcn/ui@0.1.0/dist/shadcn-ui.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@shadcn/ui@0.1.0/dist/shadcn-ui.min.js" defer></script>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900">
+    <!-- Header/Navbar -->
+    <header class="sticky top-0 z-40 w-full border-b bg-white dark:bg-gray-900">
+        <div class="container mx-auto max-w-7xl flex h-14 items-center px-4 sm:px-6 lg:px-8">
+            <div class="mr-4 hidden md:flex">
+                <a href="#" class="mr-6 flex items-center space-x-2">
+                    <span class="font-bold text-xl">Transformers in Neuroscience</span>
+                </a>
+            </div>
+            <nav class="flex items-center space-x-4 lg:space-x-6 mx-6">
+                <a href="#about" class="text-sm font-medium transition-colors hover:text-primary">About</a>
+                <a href="#schedule" class="text-sm font-medium transition-colors hover:text-primary">Schedule</a>
+                <a href="#materials" class="text-sm font-medium transition-colors hover:text-primary">Materials</a>
+                <a href="#resources" class="text-sm font-medium transition-colors hover:text-primary">Resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about"
+        class="w-full py-4 md:py-8 lg:py-12 bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900">
+        <div class="container mx-auto max-w-7xl px-4 md:px-6">
+            <div class="flex flex-col items-center justify-center space-y-4 text-center">
+                <div class="space-y-2">
+                    <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                        Transformers in Neuroscience
+                    </h1>
+                    <p class="text-muted-foreground text-purple-600 font-semibold">
+                        Cosyne 2025 Tutorial Session Sponsored by the Simons Foundation
+                    </p>
+                    <p
+                        class="max-w-[800px] text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed dark:text-gray-400">
+                        In this tutorial, we'll introduce the fundamentals of transformers and their applications in
+                        neuroscience using our new software package, torch_brain. Participants will explore how
+                        transformers can be used to analyze both electrophysiology data.
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+                <div class="space-y-4">
+                    <div
+                        class="inline-flex items-center justify-center rounded-lg bg-purple-100 p-2 dark:bg-purple-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="h-6 w-6 text-purple-600 dark:text-purple-200">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold">For Beginners</h3>
+                    <p class="text-gray-500 dark:text-gray-400">
+                        Straightforward tools to fine-tune pretrained models on your own data without extensive machine
+                        learning expertise.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <div
+                        class="inline-flex items-center justify-center rounded-lg bg-purple-100 p-2 dark:bg-purple-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="h-6 w-6 text-purple-600 dark:text-purple-200">
+                            <path d="M18 6H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h13l4-3.5L18 6Z"></path>
+                            <path d="M12 13v8"></path>
+                            <path d="M12 3v3"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold">For Advanced Users</h3>
+                    <p class="text-gray-500 dark:text-gray-400">
+                        Insights into strategies for building large-scale models and adapting transformer architectures
+                        for neuroscience applications.
+                    </p>
+                </div>
+            </div> -->
+            <div class="flex flex-col gap-2 items-center justify-center mt-6 sm:flex-row">
+                <a href="#materials"
+                    class="inline-flex h-10 items-center justify-center rounded-md bg-purple-600 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-purple-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
+
+                    Access Materials
+                </a>
+                <a href="#schedule"
+                    class="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-purple-700 hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
+                    View Schedule
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section id="materials" class="w-full py-4 md:py-8 lg:py-12 bg-white dark:bg-gray-900">
+        <div class="container mx-auto max-w-7xl px-4 md:px-6">
+            <div class="flex flex-col items-center justify-center space-y-4 text-center">
+                <div class="space-y-2">
+                    <h2 class="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl text-purple-700 font-serif">
+                        Tutorial Materials</h2>
+                    <p
+                        class="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                        Access notebooks and resources for the tutorial
+                    </p>
+                </div>
+            </div>
+            <div class="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-2">
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                    <div class="flex flex-col space-y-1.5 p-6">
+                        <h3 class="text-2xl font-semibold leading-none tracking-tight">Notebook 1</h3>
+                        <p class="text-sm text-muted-foreground">Building Data Objects</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-500 dark:text-gray-400">
+                            Learn how to prepare and structure neuroscience data for transformer models
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center p-6 pt-0 gap-4">
+                        <a href="https://colab.research.google.com/drive/1BhPKsL643Ch6fXa_NVIpbKfN7gcCRe8e"
+                            class="inline-flex items-center justify-center rounded-md bg-purple-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-purple-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mr-2 h-4 w-4">
+                                <path fill="#E8710A"
+                                    d="M4.54 9.46 2.19 7.1a6.93 6.93 0 0 0 0 9.79l2.36-2.36a3.59 3.59 0 0 1-.01-5.07Z" />
+                                <path fill="#F9AB00"
+                                    d="m2.19 7.1 2.35 2.36a3.59 3.59 0 0 1 5.08 0l1.71-2.93-.1-.08a6.93 6.93 0 0 0-9.04.65ZM11.34 17.46l-1.72-2.92a3.59 3.59 0 0 1-5.08 0L2.19 16.9a6.93 6.93 0 0 0 9 .65l.11-.09M12 7.1a6.93 6.93 0 0 0 0 9.79l2.36-2.36a3.59 3.59 0 1 1 5.08-5.08l2.37-2.35a6.93 6.93 0 0 0-9.81 0Z" />
+                                <path fill="#E8710A"
+                                    d="m21.81 7.1-2.35 2.36a3.59 3.59 0 0 1-5.08 5.08L12 16.9a6.93 6.93 0 0 0 9.81-9.8Z" />
+                            </svg>
+                            Open in Colab
+                        </a>
+                        <a href="https://drive.google.com/file/d/1BhPKsL643Ch6fXa_NVIpbKfN7gcCRe8e/view?usp=drive_link"
+                            class="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 h-4 w-4">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download Notebook
+                        </a>
+                    </div>
+                </div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                    <div class="flex flex-col space-y-1.5 p-6">
+                        <h3 class="text-2xl font-semibold leading-none tracking-tight">Notebook 2</h3>
+                        <p class="text-sm text-muted-foreground">Building a Model & Fine-Tuning</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-500 dark:text-gray-400">
+                            Explore transformer architectures and learn how to fine-tune models on neuroscience data
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center p-6 pt-0 gap-4">
+                        <a href="https://colab.research.google.com/drive/1WDLqGcFm0cNmoggIatTo2Vp2gncc9kF5"
+                            class="inline-flex items-center justify-center rounded-md bg-purple-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-purple-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mr-2 h-4 w-4">
+                                <path fill="#E8710A"
+                                    d="M4.54 9.46 2.19 7.1a6.93 6.93 0 0 0 0 9.79l2.36-2.36a3.59 3.59 0 0 1-.01-5.07Z" />
+                                <path fill="#F9AB00"
+                                    d="m2.19 7.1 2.35 2.36a3.59 3.59 0 0 1 5.08 0l1.71-2.93-.1-.08a6.93 6.93 0 0 0-9.04.65ZM11.34 17.46l-1.72-2.92a3.59 3.59 0 0 1-5.08 0L2.19 16.9a6.93 6.93 0 0 0 9 .65l.11-.09M12 7.1a6.93 6.93 0 0 0 0 9.79l2.36-2.36a3.59 3.59 0 1 1 5.08-5.08l2.37-2.35a6.93 6.93 0 0 0-9.81 0Z" />
+                                <path fill="#E8710A"
+                                    d="m21.81 7.1-2.35 2.36a3.59 3.59 0 0 1-5.08 5.08L12 16.9a6.93 6.93 0 0 0 9.81-9.8Z" />
+                            </svg>
+                            Open in Colab
+                        </a>
+                        <a href="https://drive.google.com/file/d/1WDLqGcFm0cNmoggIatTo2Vp2gncc9kF5/view?usp=drive_link"
+                            class="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 h-4 w-4">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download Notebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="w-full py-4 md:py-8 lg:py-12 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto max-w-7xl px-4 md:px-6">
+            <div class="flex flex-col items-center justify-center space-y-4 text-center">
+                <div class="space-y-2">
+                    <h2 class="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl text-purple-700 font-serif">
+                        Useful Resources</h2>
+                    <p
+                        class="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                        Documentation and libraries to help you continue your learning
+                    </p>
+                </div>
+            </div>
+            <div class="mx-auto grid max-w-5xl gap-6 py-12 md:grid-cols-3">
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                    <div class="flex flex-col items-center space-y-4 p-6">
+                        <img src="https://temporaldata.readthedocs.io/en/latest/_static/temporaldata_logo.png"
+                            alt="temporaldata logo" class="h-[28.8] w-auto object-contain" />
+                        <h3 class="text-xl font-semibold leading-none tracking-tight">temporaldata</h3>
+                    </div>
+                    <div class="p-6 pt-0 flex-grow">
+                        <p class="text-gray-500 dark:text-gray-400">
+                            Library for handling temporal neural data with efficient data structures and processing
+                            tools
+                        </p>
+                    </div>
+                    <div class="flex items-center p-6">
+                        <a href="https://temporaldata.readthedocs.io/en/latest/index.html"
+                            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+                            View Documentation
+                        </a>
+                    </div>
+                </div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                    <div class="flex flex-col items-center space-y-4 p-6">
+                        <img src="https://brainsets.readthedocs.io/en/latest/_static/brainsets_logo.png"
+                            alt="brainsets logo" class="h-[28.8] w-auto object-contain" />
+                        <h3 class="text-xl font-semibold leading-none tracking-tight">brainsets</h3>
+                    </div>
+                    <div class="p-6 pt-0 flex-grow">
+                        <p class="text-gray-500 dark:text-gray-400">
+                            A collection of pre-processed neuroscience datasets ready for model training and evaluation
+                        </p>
+                    </div>
+                    <div class="flex items-center p-6">
+                        <a href="https://brainsets.readthedocs.io/en/latest/index.html"
+                            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+                            View Documentation
+                        </a>
+                    </div>
+                </div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                    <div class="flex flex-col items-center space-y-4 p-6">
+                        <img src="https://torch-brain.readthedocs.io/en/latest/_static/torch_brain_logo.png"
+                            alt="torch_brain logo" class="h-[28.8] w-auto object-contain" />
+                        <h3 class="text-xl font-semibold leading-none tracking-tight">torch_brain</h3>
+                    </div>
+                    <div class="p-6 pt-0 flex-grow">
+                        <p class="text-gray-500 dark:text-gray-400">
+                            A PyTorch-based library for building transformer models for neuroscience applications
+                        </p>
+                    </div>
+                    <div class="flex items-center p-6">
+                        <a href="https://torch-brain.readthedocs.io/en/latest/index.html"
+                            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+                            View Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="w-full py-4 md:py-8 lg:py-12 bg-white dark:bg-gray-900">
+        <div class="container mx-auto max-w-7xl px-4 md:px-6">
+            <div class="flex flex-col items-center justify-center space-y-4 text-center">
+                <div class="space-y-2">
+                    <h2 class="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl text-purple-700 font-serif">
+                        Schedule</h2>
+                    <p
+                        class="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                        Join us on March 27, 2025 from 12:30 p.m. to 4:30 p.m.
+                    </p>
+                </div>
+            </div>
+            <div class="mx-auto grid max-w-5xl items-center gap-6 py-12">
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                    <div class="p-6 space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="grid h-12 w-12 place-items-center rounded-full bg-purple-100 text-purple-900 dark:bg-purple-900 dark:text-purple-100">
+                                <span class="font-bold">1</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold">Introduction</h3>
+                                <p class="text-gray-500 dark:text-gray-400">12:30 p.m. - 1:30 p.m.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="grid h-12 w-12 place-items-center rounded-full bg-purple-100 text-purple-900 dark:bg-purple-900 dark:text-purple-100">
+                                <span class="font-bold">2</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold">Session #1: Building Data Objects</h3>
+                                <p class="text-gray-500 dark:text-gray-400">1:30 p.m. - 2:15 p.m.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="grid h-12 w-12 place-items-center rounded-full bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="h-6 w-6">
+                                    <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                                    <line x1="6" y1="1" x2="6" y2="4"></line>
+                                    <line x1="10" y1="1" x2="10" y2="4"></line>
+                                    <line x1="14" y1="1" x2="14" y2="4"></line>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold">Break</h3>
+                                <p class="text-gray-500 dark:text-gray-400">2:15 p.m. - 2:45 p.m.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="grid h-12 w-12 place-items-center rounded-full bg-purple-100 text-purple-900 dark:bg-purple-900 dark:text-purple-100">
+                                <span class="font-bold">3</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold">Session #2: Building a Model & Fine-Tuning</h3>
+                                <p class="text-gray-500 dark:text-gray-400">2:45 p.m. - 4:30 p.m.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="w-full py-4 bg-gray-900 text-gray-200">
+        <div class="container mx-auto max-w-7xl px-4 md:px-6">
+            <div class="text-center text-sm text-gray-400">
+                <p>© 2025 Cosyne Tutorial - Transformers in Neuroscience. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Optional JavaScript for interactive elements
+        document.addEventListener('DOMContentLoaded', function () {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
