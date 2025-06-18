@@ -12,78 +12,141 @@
 
 <body class="bg-gray-50 dark:bg-gray-900">
     <!-- Header/Navbar -->
-    <header class=" top-0 z-40 w-full border-b bg-white dark:bg-gray-900">
-        <div class="container mx-auto max-w-7xl flex h-14 items-center px-4 sm:px-6 lg:px-8">
+    <header class="top-0 z-40 w-full border-b bg-white dark:bg-gray-900 backdrop-blur-sm">
+        <div class="container mx-auto max-w-7xl flex h-16 items-center px-4 sm:px-6 lg:px-8">
             <div class="mr-4 hidden md:flex">
                 <a href="#" class="mr-6 flex items-center space-x-2">
-                    <span class="font-bold text-xl">Transformers in Neuroscience</span>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="h-6 w-6 text-purple-600">
+                        <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-5 0v-15A2.5 2.5 0 0 1 9.5 2Z"></path>
+                        <path d="M14.5 2A2.5 2.5 0 0 1 17 4.5v15a2.5 2.5 0 0 1-5 0v-15A2.5 2.5 0 0 1 14.5 2Z"></path>
+                        <path d="M3 7h2"></path>
+                        <path d="M19 7h2"></path>
+                        <path d="M3 17h2"></path>
+                        <path d="M19 17h2"></path>
+                        <path d="M4 12h16"></path>
+                    </svg> -->
+                    <span
+                        class="font-bold text-xl bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Transformers
+                        in Neuroscience</span>
                 </a>
             </div>
             <nav class="flex items-center space-x-4 lg:space-x-6 mx-6">
-                <a href="#materials" class="text-sm font-medium transition-colors hover:text-primary">Materials</a>
-                <a href="#resources" class="text-sm font-medium transition-colors hover:text-primary">Resources</a>
-                <a href="#schedule" class="text-sm font-medium transition-colors hover:text-primary">Schedule</a>
+                <a href="#materials" class="text-sm font-medium transition-colors hover:text-purple-600">Materials</a>
+                <a href="#organizers" class="text-sm font-medium transition-colors hover:text-purple-600">Team</a>
+                <a href="#resources" class="text-sm font-medium transition-colors hover:text-purple-600">Resources</a>
+                <a href="#schedule" class="text-sm font-medium transition-colors hover:text-purple-600">Schedule</a>
             </nav>
         </div>
     </header>
 
+
     <!-- About Section -->
     <section id="about"
-        class="w-full py-4 md:py-8 lg:py-12 bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900">
-        <div class="container mx-auto max-w-7xl px-4 md:px-6">
-            <div class="flex flex-col items-center justify-center space-y-4 text-center">
-                <div class="space-y-2">
-                    <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+        class="w-full py-4 md:py-8 lg:py-12 bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 relative overflow-hidden">
+        <!-- Animated Background -->
+        <div class="absolute left-0 right-0 top-0 mx-auto w-full max-w-5xl h-[220px] opacity-30 dark:opacity-40 pointer-events-none select-none"
+            style="filter: blur(0.5px);">
+            <svg class="w-full h-full" viewBox="0 0 1200 220" xmlns="http://www.w3.org/2000/svg"
+                id="about-anim-svg"></svg>
+        </div>
+        <div class="container mx-auto max-w-7xl px-4 md:px-6 relative z-10">
+            <div class="flex flex-col items-center justify-center space-y-2 text-center min-h-[220px]">
+                <div class="flex items-center justify-center space-x-2 mb-2">
+                    <h1
+                        class="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
                         Transformers in Neuroscience
                     </h1>
-                    <p class="text-muted-foreground text-purple-600 font-semibold">
-                        Cosyne 2025 Tutorial Session Sponsored by the Simons Foundation
-                    </p>
-                    <p
-                        class="max-w-[800px] text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed dark:text-gray-400">
-                        In this tutorial, we'll introduce the fundamentals of transformers and their applications in
-                        neuroscience using our new software package, torch_brain. Participants will explore how
-                        transformers can be used to analyze both electrophysiology data.
-                    </p>
                 </div>
+                <p class="text-xl text-purple-600 font-semibold">
+                    Cosyne 2025 Tutorial Session Sponsored by the Simons Foundation
+                </p>
             </div>
-            <!-- <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-                <div class="space-y-4">
-                    <div
-                        class="inline-flex items-center justify-center rounded-lg bg-purple-100 p-2 dark:bg-purple-800">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="h-6 w-6 text-purple-600 dark:text-purple-200">
-                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold">For Beginners</h3>
-                    <p class="text-gray-500 dark:text-gray-400">
-                        Straightforward tools to fine-tune pretrained models on your own data without extensive machine
-                        learning expertise.
-                    </p>
-                </div>
-                <div class="space-y-4">
-                    <div
-                        class="inline-flex items-center justify-center rounded-lg bg-purple-100 p-2 dark:bg-purple-800">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="h-6 w-6 text-purple-600 dark:text-purple-200">
-                            <path d="M18 6H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h13l4-3.5L18 6Z"></path>
-                            <path d="M12 13v8"></path>
-                            <path d="M12 3v3"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold">For Advanced Users</h3>
-                    <p class="text-gray-500 dark:text-gray-400">
-                        Insights into strategies for building large-scale models and adapting transformer architectures
-                        for neuroscience applications.
-                    </p>
-                </div>
-            </div> -->
+            <div class="mt-10 text-center" style="width: 50%; margin-left: auto; margin-right: auto;">
+                <p class="text-gray-600 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed dark:text-gray-400">
+                    In this tutorial, we'll introduce the fundamentals of transformers and their applications in
+                    neuroscience using our new software package, <img
+                        src="https://torch-brain.readthedocs.io/en/latest/_static/torch_brain_logo.png"
+                        alt="torch_brain logo" class="inline-block h-5 w-auto align-text-bottom -mr-1" />
+                    <strong>torch_brain</strong>. Participants will explore how
+                    transformers can be used to analyze both electrophysiology data.
+                </p>
+            </div>
         </div>
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const svg = document.getElementById('about-anim-svg');
+            if (!svg) return;
+            svg.innerHTML = '';
+            const numRows = 4;
+            const spikesPerRow = 10;
+            const bitsPerRow = 10;
+            const spikeX0 = 80, spikeX1 = 575;
+            const bitX0 = 600, bitX1 = 1120;
+            const svgWidth = 1200;
+            const centerX = svgWidth / 2;
+            const spread = 340; // how far from center the spikes/bits start
+            const rowHeight = 45;
+            const spikeColor = '#7c3aed'; // purple-600
+            const bitColor = '#2563eb';   // blue-600
+            const spikeLen = 38;
+            const bitFontSize = 32;
+            const animDur = 2.2;
+            for (let row = 0; row < numRows; row++) {
+                const y = 40 + row * rowHeight;
+                // Spikes (left)
+                for (let i = 0; i < spikesPerRow; i++) {
+                    const x = spikeX0 + Math.random() * (spikeX1 - spikeX0);
+                    const t = i / (spikesPerRow - 1);
+                    const path = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                    path.setAttribute('x1', x);
+                    path.setAttribute('y1', y - spikeLen / 2);
+                    path.setAttribute('x2', x);
+                    path.setAttribute('y2', y + spikeLen / 2);
+                    path.setAttribute('stroke', spikeColor);
+                    path.setAttribute('stroke-width', '3');
+                    path.setAttribute('opacity', '0.7');
+                    const animate = document.createElementNS('http://www.w3.org/2000/svg', 'animate');
+                    animate.setAttribute('attributeName', 'opacity');
+                    animate.setAttribute('values', '0;1;0');
+                    animate.setAttribute('dur', animDur + 's');
+                    animate.setAttribute('begin', (i * 0.13 + row * 0.2) + 's');
+                    animate.setAttribute('repeatCount', 'indefinite');
+                    path.appendChild(animate);
+                    svg.appendChild(path);
+                }
+                // Bits (right to center)
+                for (let i = 0; i < bitsPerRow; i++) {
+                    const x = bitX0 + i * ((bitX1 - bitX0) / (bitsPerRow - 1));
+                    const t = i / (bitsPerRow - 1);
+                    const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                    text.setAttribute('x', x);
+                    text.setAttribute('y', y + bitFontSize / 2 - 4);
+                    text.setAttribute('fill', bitColor);
+                    text.setAttribute('font-size', bitFontSize);
+                    text.setAttribute('font-family', 'monospace');
+                    text.setAttribute('font-weight', 'bold');
+                    text.setAttribute('opacity', '0.7');
+                    text.textContent = Math.random() < 0.5 ? '0' : '1';
+                    const animate = document.createElementNS('http://www.w3.org/2000/svg', 'animate');
+                    animate.setAttribute('attributeName', 'opacity');
+                    animate.setAttribute('values', '0;1;0');
+                    // Randomize duration and delay for each bit
+                    const bitDur = (1.2 + Math.random() * 1.3).toFixed(2); // 1.2s to 2.5s
+                    const bitDelay = (Math.random() * 2.0).toFixed(2); // 0s to 2s
+                    animate.setAttribute('dur', bitDur + 's');
+                    animate.setAttribute('begin', bitDelay + 's');
+                    animate.setAttribute('repeatCount', 'indefinite');
+                    text.appendChild(animate);
+                    svg.appendChild(text);
+                }
+            }
+        });
+    </script>
+
 
     <!-- Materials Section -->
     <section id="materials" class="w-full py-4 md:py-8 lg:py-12 bg-white dark:bg-gray-900">
@@ -100,17 +163,24 @@
             </div>
             <div class="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-2">
                 <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
-                    <div class="flex flex-col space-y-1.5 p-6">
-                        <h3 class="text-2xl font-semibold leading-none tracking-tight">Notebook 1</h3>
+                    <div class="flex flex-col space-y-1.5 p-4">
+                        <h3 class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-purple-600">
+                                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+                            </svg>
+                            Notebook 1
+                        </h3>
                         <p class="text-sm text-muted-foreground">Building Data Objects</p>
                     </div>
-                    <div class="p-6">
+                    <div class="p-4 pt-0">
                         <p class="text-gray-500 dark:text-gray-400">
                             Learn how to prepare and structure neuroscience data for transformer models
                         </p>
                     </div>
                     <div class="flex flex-col items-center p-6 pt-0 gap-4">
-                        <a href="https://colab.research.google.com/drive/1BhPKsL643Ch6fXa_NVIpbKfN7gcCRe8e"
+                        <a href="https://colab.research.google.com/drive/1WeLwgpEVXwqHmUkHcUaRziCD--zLgZhT"
                             class="inline-flex items-center justify-center rounded-md bg-purple-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-purple-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mr-2 h-4 w-4">
                                 <path fill="#E8710A"
@@ -121,19 +191,6 @@
                                     d="m21.81 7.1-2.35 2.36a3.59 3.59 0 0 1-5.08 5.08L12 16.9a6.93 6.93 0 0 0 9.81-9.8Z" />
                             </svg>
                             Open in Colab
-                        </a>
-                        <a href="https://colab.research.google.com/drive/1WeLwgpEVXwqHmUkHcUaRziCD--zLgZhT"
-                            class="inline-flex items-center justify-center rounded-md border border-yellow-400 bg-yellow-50 px-4 py-2 text-sm font-medium text-yellow-800 shadow-sm transition-colors hover:bg-yellow-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="mr-2 h-4 w-4">
-                                <path
-                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
-                                </path>
-                                <line x1="12" y1="9" x2="12" y2="13"></line>
-                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
-                            </svg>
-                            Having internet issues? Open this pre-run notebook
                         </a>
                         <a href="https://drive.google.com/file/d/1BhPKsL643Ch6fXa_NVIpbKfN7gcCRe8e/view?usp=drive_link"
                             class="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full">
@@ -149,17 +206,24 @@
                     </div>
                 </div>
                 <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
-                    <div class="flex flex-col space-y-1.5 p-6">
-                        <h3 class="text-2xl font-semibold leading-none tracking-tight">Notebook 2</h3>
+                    <div class="flex flex-col space-y-1.5 p-4">
+                        <h3 class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-purple-600">
+                                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+                            </svg>
+                            Notebook 2
+                        </h3>
                         <p class="text-sm text-muted-foreground">Building a Model & Fine-Tuning</p>
                     </div>
-                    <div class="p-6">
+                    <div class="p-4 pt-0">
                         <p class="text-gray-500 dark:text-gray-400">
                             Explore transformer architectures and learn how to fine-tune models on neuroscience data
                         </p>
                     </div>
                     <div class="flex flex-col items-center p-6 pt-0 gap-4">
-                        <a href="https://colab.research.google.com/drive/1F8hCSmz38-Aa-bbcYKTJi7B3JXbDe14E"
+                        <a href="https://colab.research.google.com/drive/1Dl12meA8yZ5rR10hGGvHiDtkiVH7-vyl?authuser=1"
                             class="inline-flex items-center justify-center rounded-md bg-purple-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-purple-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mr-2 h-4 w-4">
                                 <path fill="#E8710A"
@@ -170,19 +234,6 @@
                                     d="m21.81 7.1-2.35 2.36a3.59 3.59 0 0 1-5.08 5.08L12 16.9a6.93 6.93 0 0 0 9.81-9.8Z" />
                             </svg>
                             Open in Colab
-                        </a>
-                        <a href="https://colab.research.google.com/drive/1Dl12meA8yZ5rR10hGGvHiDtkiVH7-vyl?authuser=1"
-                            class="inline-flex items-center justify-center rounded-md border border-yellow-400 bg-yellow-50 px-4 py-2 text-sm font-medium text-yellow-800 shadow-sm transition-colors hover:bg-yellow-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="mr-2 h-4 w-4">
-                                <path
-                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
-                                </path>
-                                <line x1="12" y1="9" x2="12" y2="13"></line>
-                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
-                            </svg>
-                            Having internet issues? Open this pre-run notebook
                         </a>
                         <a href="https://drive.google.com/file/d/1F8hCSmz38-Aa-bbcYKTJi7B3JXbDe14E/view?usp=drive_link"
                             class="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full">
@@ -195,6 +246,121 @@
                             </svg>
                             Download Notebook
                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Organizers Section -->
+    <section id="organizers" class="w-full py-4 md:py-8 lg:py-12 bg-white dark:bg-gray-900">
+        <div class="container mx-auto max-w-7xl px-4 md:px-6">
+            <div class="flex flex-col items-center justify-center space-y-4 text-center">
+                <div class="space-y-2">
+                    <h2 class="text-xl font-bold tracking-tighter sm:text-2xl md:text-3xl text-purple-600">
+                        Organizers & Teaching Assistants</h2>
+                    <p
+                        class="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                        This workshop was made possible by our amazing team!
+                    </p>
+                </div>
+            </div>
+            <div class="mx-auto grid max-w-5xl gap-6 py-12 md:grid-cols-5">
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-6 md:col-span-2">
+                    <h3 class="text-lg font-semibold mb-4">Organizers & Content Developers</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center space-x-2">
+                            <a href="https://nerdslab.github.io" target="_blank" rel="noopener noreferrer"
+                                class="font-medium hover:text-purple-600 transition-colors flex items-center space-x-2"
+                                title="Visit Eva Dyer's website">
+                                <span>Eva Dyer</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="text-gray-500 group-hover:text-purple-600 transition-colors">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path
+                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <span class="text-sm text-gray-500">(Organizer, UPenn)</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <a href="https://www.mehai.dev" target="_blank" rel="noopener noreferrer"
+                                class="font-medium hover:text-purple-600 transition-colors flex items-center space-x-2"
+                                title="Visit Mehdi Azabou's website">
+                                <span>Mehdi Azabou</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="text-gray-500 group-hover:text-purple-600 transition-colors">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path
+                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <span class="text-sm text-gray-500">(ARNI, Columbia University)</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <a href="https://vinam.dev" target="_blank" rel="noopener noreferrer"
+                                class="font-medium hover:text-purple-600 transition-colors flex items-center space-x-2"
+                                title="Visit Vinam Arora's website">
+                                <span>Vinam Arora</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="text-gray-500 group-hover:text-purple-600 transition-colors">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path
+                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <span class="text-sm text-gray-500">(UPenn)</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="font-medium">Shivashriganesh Mahato</span>
+                            <span class="text-sm text-gray-500">(UPenn)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-6 md:col-span-3">
+                    <h3 class="text-lg font-semibold mb-4">Teaching Assistants</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <ul class="space-y-3">
+                            <li class="flex items-center space-x-2">
+                                <span class="font-medium">Jingyun Xiao</span>
+                                <span class="text-sm text-gray-500">(UPenn)</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <span class="font-medium">Divyansha Lachi</span>
+                                <span class="text-sm text-gray-500">(UPenn)</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <span class="font-medium">Cole Hurwitz</span>
+                                <span class="text-sm text-gray-500">(Columbia)</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <span class="font-medium">Nanda Krishna</span>
+                                <span class="text-sm text-gray-500">(MILA)</span>
+                            </li>
+                        </ul>
+                        <ul class="space-y-3">
+                            <li class="flex items-center space-x-2">
+                                <span class="font-medium">Avery Ryoo</span>
+                                <span class="text-sm text-gray-500">(MILA)</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <span class="font-medium">Ximeng Mao</span>
+                                <span class="text-sm text-gray-500">(MILA)</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -350,7 +516,7 @@
     <footer class="w-full py-4 bg-gray-900 text-gray-200">
         <div class="container mx-auto max-w-7xl px-4 md:px-6">
             <div class="text-center text-sm text-gray-400">
-                <p>© 2025 Cosyne Tutorial - Transformers in Neuroscience. All rights reserved.</p>
+                <p>© 2025 Mehdi Azabou. All rights reserved.</p>
             </div>
         </div>
     </footer>
